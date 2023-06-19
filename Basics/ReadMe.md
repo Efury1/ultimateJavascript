@@ -1,13 +1,15 @@
 
-Basics of Javascript
-
+# Basics of Javascript #
+Javascript is a language that adds interactivity to a website. 
+------------------------------------
+## Here a some basics ##
 Javascript has reserved keyword
 Variables should have meaninful names
 Variables cannot contain a space or hyper (-)
 Variables are case-sensitive 
-
-
 We use a constant when we don't want something to change. 
+
+## Types ##
 
 | Primitives/Value Types | Reference Types |
 |----------|---|
@@ -20,30 +22,30 @@ We use a constant when we don't want something to change.
 
 Dynamic means it can change at run time. 
 
-Console:
+## Console:
 You can write type in console. 
 
 
-Objects 
+## Objects 
 Declaring a person object, instead of referencing two different variable. 
 Object literal looks like this
 let person = {
     name: "Eliza" 
 };
 
-Using dot notation. 
+### Using dot notation. 
 person.name = "John";
 
 Backet Notation helps us access in a dynamic way.
 Can access property using Bracket Notation person['name'] = 'Mary';
 
-Array
+## Array
 You may deal with a list of objects. An example may be a use of colours the user has selected. Array is an object. 
 
-Array literal
+## Array literal
 []
 
-Functions
+## Functions
 
 functions can have inputs and that can change how it behaviour. 
 function great(name) { //passing in parameter 
