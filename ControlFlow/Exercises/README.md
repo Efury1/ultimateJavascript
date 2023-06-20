@@ -118,3 +118,17 @@ Examples:
 * 5 x 12 = 60
 
 We will be using % module to give us the remaind of the division, this we will know whether it's a multple.
+
+## Exercise 8
+We want to calculate the grade of a student.
+We pass this array with the function to calculate grade.
+
+What Needs to be done:
+* Calculate Averge
+* 1-59: F
+* 60-69: D
+* 70-79: C
+* 80-89: B
+* 90-100: A
+
+The average is calculated but adding a group of numbers and then dividing by the count of those numbers.

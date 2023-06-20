@@ -32,6 +32,10 @@ body {
 .navbar {
   overflow: hidden;
   background-color: #333;
+  flex-direction: column;
+  gap: 70px;
+  list-style: none;
+  text-align: center;
 }
 
 /* Style the navigation bar links */
@@ -69,12 +73,26 @@ body {
 
 /* Column container */
 .row {  
-  display: -ms-flexbox; /* IE10 */
-  display: flex;
-  -ms-flex-wrap: wrap; /* IE10 */
-  flex-wrap: wrap;
+    display: flex;
+    flex: 10 10 10 10;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
+.tileButton li {
+  max-width: 980px;
+  margin: 5px;
+  height: 200px;
+  width: 500px;
+  padding: 40px 25px;
+  border-radius: 5px;
+  text-align: center;
+  overflow: hidden;
+  display: block;
+  list-style: none;
+  background-color: #eaebef;
+  color: white;
+}
 /* Create two unequal columns that sits next to each other */
 /* Sidebar/left column */
 .side {
@@ -107,8 +125,8 @@ body {
 }
 
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 700px) {
-  .row {   
+@media screen and (max-width: 1000px) {
+  .row {  
     flex-direction: column;
   }
 }
@@ -130,34 +148,33 @@ body {
 </div>
 
 <div class="navbar">
-  <a href="Homepage.html">Homepage</a>
-  <a href="GreaterThan.html">Greater and Less than Calculator</a>
-  <a href="Landscape.html">Check if Landscape Picture</a>
-  <a href="FizzBuzz.html">FizzBuzz</a>
+    <a href="Homepage.html">Homepage</a>
   <a href="#" class="right">Link</a>
 </div>
-
 
   <div class="side">
     <h2>About site</h2>
     <p>Wesite goes through various exercies that focus on Javascript control flow</p>
   </div>
-  <div class="main">
-    <div id="container">
-    <form>
-      <h2>GreaterThan</h2>
-      <p>Your First Number, a
-        <input id="firstNumber" type="text" placeholder="First number"></p></input>
-      </p>
-      <p>Your Second Number, b
-        <input id="secondNumber" type="text" placeholder="Second number">
-      </p>
-      <p>Anwser = a <input id="Second Number" type="text" disabled="disabled"></input> b </p>
-      <p>First Number, a is<input id="Second Number" type="text" disabled="disabled"></input> than the Second Number, b </p>
-      <button type="button" id="solve">Solve</button>
-    </form>
-    </div>
-    <br>
+  <div class="row">
+            <ul class="tileButton">
+                <li><a href="GreaterThan.html">Greater and Less than Calculator</a></li>
+            </ul>
+            <ul class="tileButton">
+                <li><a href="Landscape.html">Check if Landscape Picture</a></li>
+            </ul>
+            <ul class="tileButton">
+                <li><a href="FizzBuzz.html">FizzBuzz</a></li>
+            </ul>
+            <ul class="tileButton">
+                <li>Cat</li>
+            </ul>
+            <ul class="tileButton">
+                <li>Cat</li>
+            </ul>
+            <ul class="tileButton">
+                <li>Cat</li>
+            </ul>
   </div>
 </body>
 </html>
