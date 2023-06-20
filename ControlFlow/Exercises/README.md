@@ -75,3 +75,5 @@ This exercise focuses on demerit points.
 We used Math.floor for this exercise as part of out calculator. The math.floor() is used to return the closet integer that's smaller than or equal to the given number. 
 
 Math.floor() is a built-in method that allows you to round down a given to the nearest integer less than or equal to the number. IT is commonly used when you need to truncate the decimal part of a nummber and obtain the integer part. 
+
+Return stops the sexecution of a function and returns a value.

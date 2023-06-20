@@ -1,17 +1,22 @@
 
 
-checkSpeed(100);
+checkSpeed(109);
 
 function checkSpeed(speed) {
     const speedLimit = 70;
-    var excess = speedLimit - speed;
-    var points;
-    if(speed > speedLimit) {
-        points = excess;
-        return points;
+    var excess = speed - speedLimit;
+    const kmPerPoint = 5;
+    pointSystem = 12;
+    if(speed <= speedLimit) {
+        console.log("Your speed is good");
     }
-    if (points > 12) {
-        return 'License suspended'
+    else {
+        const points = Math.floor((excess) / kmPerPoint);
+        if (points >= pointSystem) {
+            console.log('License suspended');
+        }
+        else {
+            console.log('Points', points)
+        }
     }
 }
-
