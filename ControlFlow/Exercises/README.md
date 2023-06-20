@@ -77,3 +77,44 @@ We used Math.floor for this exercise as part of out calculator. The math.floor()
 Math.floor() is a built-in method that allows you to round down a given to the nearest integer less than or equal to the number. IT is commonly used when you need to truncate the decimal part of a nummber and obtain the integer part. 
 
 Return stops the sexecution of a function and returns a value.
+
+## Exercise 5
+A function that takes a parameter called limit. 
+* Shows all numbers until the limits
+* Display whether they are odd or event
+
+A limit is defined as a value that that a fucntion approaches the ouput for 
+the given input values. 
+
+We are using the operator called "modulus" that will tells us whether the it's divisible by 2. 
+This is how we are going to figure out whether the number is ODD or Even.
+
+## Exercise 6
+Function that takes an array returns the numbers of truthy elements in an array. An easy way for us to check if the value if truthy or falsy is by passing it to the Boolean constructor function.
+
+Truthy and Falsy Expressions
+* Truthy values in Javascript, a truthy value is a value that is considered true when encountered in Boolean context.
+* Falsy values in Javascript, a falsy value is a value that is considered false when envountered in a Boolean context. 
+
+Falsy Values
+* False
+* 0
+* -0
+* ""
+* null
+* undefined
+* NaN
+
+All other values are considered truthy!
+
+## Exercise 7
+Functions for the multiples of 3 and 5. 
+
+Multiples are what we get after multiplying the number. "Factors" are the numbers we can multiple together to get another number.
+
+Examples:
+* 5 x 1 = 5
+* 5 x 2 = 10
+* 5 x 12 = 60
+
+We will be using % module to give us the remaind of the division, this we will know whether it's a multple.
