@@ -3,10 +3,31 @@
   box-sizing: border-box;
 }
 
+
+
 /* Style the body */
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+}
+
+.directions {
+  display: block;
+  margin-bottom:auto 10px;
+  font-size: 30px;
+  margin: 10px;
+}
+
+#final_grade {
+  font: bold 72px Helvetica, Verdana;
+}
+
+#grades, #avg_grades {
+  font: normal 20px "Courier New";
+}
+
+#final_grade {
+  font: bold 72px Helvetica, Verdana;
 }
 
 .bold {
@@ -146,3 +167,4 @@ body {
     width: 100%;
   }
 }
+

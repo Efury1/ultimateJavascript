@@ -20,7 +20,7 @@ function calculateGrade(marks) {
         return average, console.log('C');
     }
     else if (average <= 79 && average >= 70) {
-        return average, console.log('C');
+        return average, console.log('D');
     }
     
     
