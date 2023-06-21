@@ -9,7 +9,11 @@
 <link rel="stylesheet" href="styles.css">
 <script>
   function myFunction() {
-    document.getElementById("grades").innerHTML = "Change";
+    let inputGradeValue = document.getElementById("yourgrades").value;
+  
+      document.getElementById("grades").innerHTML = inputGradeValue;
+      console.log(inputGradeValue);
+   
   }
 </script>
 </head>
