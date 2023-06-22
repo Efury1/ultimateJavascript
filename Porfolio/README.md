@@ -13,3 +13,11 @@ Href #referencing to an id
 
 Flex is useful! 
 
+## innerHTML
+property sets or return the HTML content of an element. 
+
+## Browsers
+On browser that don't support input of type number, a number is a type text.
+
+## Regex
+On browser that don't support input of type number, a number is a type text.
