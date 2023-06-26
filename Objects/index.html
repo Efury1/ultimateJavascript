@@ -74,13 +74,22 @@ body {
     </div>
     <div class="card">
       <h2>Exercise 2</h2>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <p>Creating two circle objects</p>
+      <p><br>We don't want to duplicate implementation because if we have a bug in that method we will have to fix it in multiple places.
+        If our objects have logic we need a different way to create objects.
+        That's when we use a factory method or constructor functions. 
+        Factory functions produce objects. </br>
+
+        <br>Therefore we a making a function caled createCircle, then we move the diffenition inside the factory faction. 
+        We will be return an object. We are passing radius as a paramenter instead of coding one.</br>
+        
+
+      </p>
     </div>
     <div class="card">
       <h2>Exercise 3</h2>
       <p>Create Circle</p>
-      <p>We are doing Constructor function.
+      <p>We are doing Constructor function. The constructor pattern function
         <br>When naming constructor functions we should use Pastal notation (OneTwoThreeFour).
         In Javascript we have a keyword called this, and this is a reference to the object accessing this piece of code.  
         We are using dot notation which helps us access properties of an object, read a property, or we can set a property.
@@ -104,6 +113,7 @@ body {
         }
         const me = new Person('Eliza')
 
+        <br>The constructor pattenr is familar to developers who have experience with programming in languages like C# and Java. </br>
       </p>
     </div>
     <div class="card">
@@ -119,23 +129,84 @@ body {
     </div>
     <div class="card">
       <h2>Exercise 5</h2>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <p>Continuing createCircle</p>
+      <p>To look at the constuctor in this exercise, you can go another.constructor in the console.
+        In javascript we have a few other build in constructors, for example, we have String() for creating string. However, quite often we use string literals.
+        This would be '', "", etc. 
+      </p>
     </div>
     <div class="card">
       <h2>Exercise 6</h2>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <p>Circle: Functions as objects</p>
+      <p>One of the confusing concepts in Javascript is here functions are objects.
+        <br>In VS if you write Circle. it will show you all the members of the cirlce function.
+        If you look at the list the pops up you'll see the purple icons which are methods (call, bind, and apply) and the blue icons are properties.
+        </br>
+        <br>If you want to explore this further in the dev console you can write `Circle.name` or `Circle.length`</br>
+        <br>It's good to know that every object in Javascript has a constructor property, and that references the function that 
+        was used to create that object. </br>
+        <br>When we declare a function using the this sytax `function Circle(radius) {
+          internally, the Javascript engine will use the function constructor to create the object.
+        </br>
+        <br>In the function we use a backtick character. </br>
+        <br>Circle.call({}, 1) is the same as const another = new Circle(1);</br>
+        <br>When we use the new operator, this new operator will interally create an empty argument to the call method. And this object will determine the context of the function code, so, 
+        it will reference the object {}.
+      </p>
+
     </div>
     <div class="card">
       <h2>Exercise 7</h2>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <p>Categories of types</p>
+      <p><br>In this part we are learning how primitives and objects dehave differently.
+        When we use an object, that object is not stored in this variable. That object is stored somewhere else in the memory and the 
+        memory location is story inside that memory variable.</br>
+        <br>Therefore, when we copy x into y, it's the address or reference which is copied. In other words, both x and y are pointing to the same address in memory. 
+        When we modify that object using x or y, the changes are immediately visible to the other varible.</br>
+        <br>Primitives are copied by their value. Objects are copied by their reference.</br>
+      </p>
+      <table>
+        <tr>
+          <th>Value Types</th>
+          <th>Reference Types</th>
+        </tr>
+        <tr>
+          <td>Number</td>
+          <td>Object</td>
+        </tr>
+        <tr>
+          <td>String</td>
+          <td>Function</td>
+        </tr>
+        <tr>
+          <td>Boolean</td>
+          <td>Array</td>
+        </tr>
+        <tr>
+          <td>Symbol</td>
+        </tr>
+        <tr>
+          <td>Undefinded</td>
+        </tr>
+        <tr>
+          <td>Null</td>
+        </tr>
+        <tr>
+        </table>
     </div>
     <div class="card">
       <h2>Exercise 8</h2>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <p>Using loops and objects</p>
+      <p><br>For in we cna iterate over all the properties and methods of an object.
+      In the loop we are using the bracket notation to get the value of the key or its property.</br>
+      <br>We also have the for of loop. This can only be used with iterables such aas arrays and maps. 
+      An objects is not iterable. However, we have a method called Object.key(circle), this will allow us to get all the 
+      keys in our circle object, this will return an array. This is a built in constructor function.</br>
+      <br>When we create an object using the object literal syntax, interally that is translated to a call an object constructor function. </br>
+      <br>Object.entries returns each value pair as an array.</br>
+      <br>sometimes what you'll want to see is if a given object has a given property or method. 
+      To do that, you can use the in operator. Example: if ('radius' in circle)</br>
+      </p>
     </div>
     <div class="card">
       <h2>Exercise 9</h2>
@@ -148,8 +219,17 @@ body {
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     </div>
   </div>
+  <div class="card">
+    <h3>Terminology</h3>
+    <br><button onclick="alert('This is a data type used to define objects in JavaScript. It is a syntax for creating an object in Javascript that is composed of key-value pairs.')">Object Literal</button></br>
+    <br><button onclick="alert('This is a special type of function used to initialize new objects.')">Constructor</button></br>
+    <br><button onclick="alert('The this keyword refers to an object. The this keyword referes to different objects depending on how it is used.')">this</button></br>
+    <br><button onclick="alert('Example')">primatives</button></br>
+    <br><button onclick="alert('Example')">Objects</button></br>
+  </div>
 
-<script src="Exercise8.js"></script>
+<script src="Exercise5.js">
+</script>
 </body>
 </html>
 

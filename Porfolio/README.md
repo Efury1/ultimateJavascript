@@ -13,6 +13,10 @@ Href #referencing to an id
 
 Flex is useful! 
 
+## Advice
+Saved timed regex logic bit. 
+## Plan
+Put in array of string numbers then we want to map to numbers. 
 ## innerHTML
 property sets or return the HTML content of an element. 
 
@@ -21,3 +25,19 @@ On browser that don't support input of type number, a number is a type text.
 
 ## Regex
 On browser that don't support input of type number, a number is a type text.
+
+## ParseInt
+Single string and number
+
+## Map 
+
+
+## Go over
+Functional programming
+Anoymous function
+
+Example
+
+
+"3, 4".split(",").map(parseInt);
+

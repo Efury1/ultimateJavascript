@@ -9,12 +9,13 @@
 <link rel="stylesheet" href="styles.css">
 <script>
   function myFunction() {
-    let pattern = /^[0-9,]*$/g;
+    let pattern = /^[0-9, ]*$/g;
     let inputGradeValue = document.getElementById("yourgrades").value;
     let result = inputGradeValue.match(pattern) ? "Yes" : "No";
     if (result == "Yes") { 
       document.getElementById("grades").innerHTML = inputGradeValue;
       console.log(result);
+      inputGradeValue.split(",").map(parseInt);
     }
    
   }
