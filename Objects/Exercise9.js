@@ -3,4 +3,16 @@ const circle = {
     draw() {
         console.log('draw');
     }
-}
+};
+
+// const another = {}
+// for (let key in circle)
+//another[key] = cirlce[key];
+
+//The code below is equivalent to the code above
+//Passing target object, then we pass one or more source objects
+const another = Object.assign({
+    color: 'yellow'
+}, circle);
+
+console.log(another);
