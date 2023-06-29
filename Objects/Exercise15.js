@@ -17,4 +17,5 @@ function showAddress(address) {
     }
 }
 
+//Pass address object
 showAddress(address);

@@ -3,7 +3,7 @@ let address = createAddress('a', 'b', 'c');
 console.log(address);
 
 //Factory Function
-function creaeAddress(street, city, zipCode) {
+function createAddress(street, city, zipCode) {
     return {
         street, 
         city, 

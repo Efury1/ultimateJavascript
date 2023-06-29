@@ -4,7 +4,8 @@ let post = {
     author: 'c',
     views: 10,
     comments: [
-        {author: 'a', body: 'b'}
+        {author: 'a', body: 'b'},
+        {author: 'c', body: 'd'},
     ],
     isLive: true
 };
