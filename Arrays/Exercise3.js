@@ -15,7 +15,11 @@ const courses = [
     return course.name === 'a';
 }); */
 
-const course = courses.find((course) {
+
+//This is what we call an arrow function.
+// If function has a single parameter you can also get read the parenthesis {}
+// IF you don't have a single parameter you have to pass an empty parenthesis ()git
+const course = courses.find((course) => {
     return course.name === 'a'
 });
 

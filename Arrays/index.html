@@ -55,7 +55,7 @@ body {
 <body>
 
 <div class="header">
-  <h2>Control Flow</h2>
+  <h2>Arrays</h2>
   <p>Within this we look at adding new elements, finding elements, removing elements, splitting arrays and combining arrays.</p>
 </div>
 
@@ -87,11 +87,19 @@ body {
       <p>In this exercise we started with declaring a new array called courses.
       In this array we are going to have a couple of course objects. </p>
       <p>We have two course objects, if we have name</p>
+      <p>If you have an array with reference types, you need to learn the find method.</p>
+      <p>As an a argument ot this method, we have to call a function. We call this function a predicate, and we use that to
+        determine if the given element exists in an array not. So, the function takes parameter that's an element in this array.
+        And in the body of this function, we should return a boolean. 
+      </p>
+      <p>In ES6 there is a shorter and cleaner way to write the same code using arrow functions, as a callback function or as an argument for a different method,
+        you can use the arrow function syntax.
+      </p>
     </div>
     <div class="card">
       <h2>Exercise 4</h2>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <p>Removing Elements</p>
+      <p>When it comes to removing elements in array we can remove it from the beginning, middle or end.</p>
     </div>
     <div class="card">
       <h2>Exercise 5</h2>
@@ -105,8 +113,13 @@ body {
     </div>
     <div class="card">
       <h2>Exercise 7</h2>
-      <p>Some text..</p>
-      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+      <p>Emptying an array</p>
+      <p>We can resign to a new array. If we have no other references it will go into garage collection.
+        Another solution would be setting the lengths property to 0. Therefore orginal array would truncated.
+        The third solution would be to use the slice method. Therefore, we could start at the first and go to last which would be numbers.length.
+        The last way to do this would to be using the pop method, you can put this in a loop and call this until there's no length.
+        The last solution is not the best because if you're dealing with a large array there will be a performance cost.
+      </p>
     </div>
     <div class="card">
       <h2>Exercise 8</h2>
@@ -124,7 +137,11 @@ body {
       <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
     </div>
   </div>
-
+  <div class="card">
+    <h3>Terminology</h3>
+    <br><button onclick="alert('The term predicates comes from mathematics. In programming it means a function that returns a boolean value.')">Predicate</button></br>
+    <br><button onclick="alert('This is a special type of function used to initialize new objects.')">Constructor</button></br>
+  </div>
 <script src="Exercise8.js"></script>
 </body>
 </html>
