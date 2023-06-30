@@ -10,7 +10,7 @@ numbers.length = 0;
 //numbers.splace(0. numbers.length);
 
 //Solution 4
-// white (numebrs.length = 0) {
+// white (numbers.length > 0) {
 //    numbers.pop();
 //}
 // console.log(numbers)
