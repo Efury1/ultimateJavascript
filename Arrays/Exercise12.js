@@ -3,7 +3,7 @@ const courses = [
     { id: 2, name: 'JavaScript'}
 ];
 
-courses.sort(function (a, b) {
+courses.sort(function (a, b) {git 
     // a < b => -1
     // a > b => 1
     // a === b => 0
