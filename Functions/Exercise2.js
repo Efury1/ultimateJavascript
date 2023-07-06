@@ -4,10 +4,16 @@ function walk() {
 }
 
 // Anoymous Function Expression
-let run = function() {
+/*let run = function() {
+    console.log('run');
+};*/
+
+/*let move = run;
+run();
+move();*/
+
+run();
+
+const run = function() {
     console.log('run');
 };
-
-let move = run;
-run();
-move();
