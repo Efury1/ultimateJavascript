@@ -1,7 +1,7 @@
 const person = {
     firstName: 'Mosh',
     lastName: 'Hamedani',
-    fullName() {
+    get fullName() {
        return `${person.firstName} ${person.lastName}`;
     },
     set fullName(value) {
